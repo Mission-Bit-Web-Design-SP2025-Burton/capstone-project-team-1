@@ -2,6 +2,9 @@
     Put all the css styles you will be using across all your HTML files here.
    For example -  css for the header and footer components, font styles etc.
 */
+* {
+  font-family: "Outfit", sans-serif;
+}
 
 @media screen and (min-width: 768px) {
   /*Tablet-specific styles go here*/
@@ -27,5 +30,6 @@
     width: 90%;
     justify-content: space-around;
     align-items: center;
+    line-height: 70px;
   }
 }
