@@ -2,6 +2,10 @@
     Put all the css styles you will be using across all your HTML files here.
    For example -  css for the header and footer components, font styles etc.
 */
+nav {
+  display: flex;
+  flex-direction: row;
+}
 
 @media screen and (min-width: 768px) {
   /*Tablet-specific styles go here*/
