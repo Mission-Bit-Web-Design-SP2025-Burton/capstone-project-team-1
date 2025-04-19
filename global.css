@@ -12,10 +12,16 @@
   nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+
     width: 100%;
   }
 
-  nav > #logo {
+  nav > .logo {
+  }
+
+  nav > .navigation-links {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
   }
 }
