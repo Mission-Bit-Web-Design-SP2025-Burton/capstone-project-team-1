@@ -17,11 +17,15 @@
   }
 
   nav > .logo {
+    width: 50px;
+    margin: 10px;
   }
 
   nav > .navigation-links {
     display: flex;
-    width: 80%;
-    justify-content: space-evenly;
+    margin-left: auto;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
   }
 }
