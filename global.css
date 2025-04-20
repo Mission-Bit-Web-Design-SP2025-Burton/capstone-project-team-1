@@ -6,29 +6,81 @@
   font-family: "Outfit", sans-serif;
 }
 
-@media screen and (min-width: 768px) {
-  /*Tablet-specific styles go here*/
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
-  /*Desktop-specific styles go here*/
-  nav {
-    display: flex;
-    flex-direction: row;
+nav > .logo {
+  width: 50px;
+  margin: 10px;
+  justify-self: center;
+}
 
-    width: 100%;
-  }
+nav > #menu-button {
+  display: block;
+  width: 50px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
 
-  nav > .menu-icon {
+nav > .topnav-links {
+  display: none;
+}
+
+.sidenav {
+  position: absolute;
+  height: 100vh;
+  width: 200px;
+  top: 0px;
+  left: -200px;
+  background-color: white;
+  transition: transform 500ms 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: beige;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.sidenav a {
+  padding: 20px;
+}
+
+#sidenav-close-button {
+  font-size: 50px;
+  align-self: start;
+  padding-right: 10px;
+  font-weight: 100;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.sidenav div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: start;
+}
+
+#sidenav-underlay {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  nav > #menu-button {
     display: none;
   }
 
-  nav > .logo {
-    width: 50px;
-    margin: 10px;
-  }
-
-  nav > .navigation-links {
+  nav > .topnav-links {
     display: flex;
     margin-left: auto;
     width: 90%;
@@ -36,4 +88,9 @@
     align-items: center;
     line-height: 70px;
   }
+  /*Tablet-specific styles go here*/
+}
+
+@media screen and (min-width: 1024px) {
+  /*Desktop-specific styles go here*/
 }
