@@ -19,6 +19,10 @@
     width: 100%;
   }
 
+  nav > .menu-icon {
+    display: none;
+  }
+
   nav > .logo {
     width: 50px;
     margin: 10px;
