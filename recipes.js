@@ -18,10 +18,16 @@ async function getRecipes() {
 
 function createRecipeCard(recipe) {
   const recipeCard = document.createElement("article");
+  recipeCard.classList.add("recipe-card");
+
   const recipeImage = document.createElement("img");
   recipeImage.src =
     "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg";
-  recipeImage.className = "";
+  recipeImage.classList.add("recipe-card-image");
+
+  const recipeName = document.createElement();
+
+  recipeCard.appendChild(recipeImage);
 }
 
 async function loadRecipeCards() {
