@@ -14,4 +14,4 @@ async function getRecipes() {
   }
 }
 
-getRecipes();
+async function loadRecipeCards() {}
