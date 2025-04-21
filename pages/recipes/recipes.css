@@ -1,0 +1,13 @@
+main {
+  display: flex;
+  max-width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main > .recipe-card {
+  width: 100%;
+}
+
+.recipe-card-image {
+}
