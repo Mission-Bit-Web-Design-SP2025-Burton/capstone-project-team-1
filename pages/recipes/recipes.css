@@ -1,11 +1,12 @@
 main {
   display: flex;
   width: 100%;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main > .recipe-card {
+  margin: 20px;
 }
 
 .recipe-card-image {
