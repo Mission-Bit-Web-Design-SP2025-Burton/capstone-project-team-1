@@ -14,6 +14,10 @@ async function getRecipes() {
   }
 }
 
+function createRecipeCard(recipe) {
+  const recipeCard = document.createElement("article");
+}
+
 async function loadRecipeCards() {
   const recipes = await getRecipes();
 
