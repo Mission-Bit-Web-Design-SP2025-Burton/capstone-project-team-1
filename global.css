@@ -31,6 +31,8 @@ nav > .topnav-links {
 }
 
 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .sidenav {
