@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  font-weight: 500;
+}
+
 .sidenav {
   position: absolute;
   height: 100vh;
