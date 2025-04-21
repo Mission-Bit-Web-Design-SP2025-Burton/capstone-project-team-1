@@ -1,5 +1,5 @@
 async function getRecipes() {
-  const url = "www.themealdb.com/api/json/v1/1/random.php";
+  const url = "https://www.themealdb.com/api/json/v1/1/random.php";
 
   try {
     const response = await fetch(url);
