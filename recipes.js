@@ -1,3 +1,5 @@
+document.body.onload = loadRecipeCards();
+
 async function getRecipes() {
   const url = "https://www.themealdb.com/api/json/v1/1/filter.php?a=Japanese";
 
@@ -16,6 +18,7 @@ async function getRecipes() {
 
 function createRecipeCard(recipe) {
   const recipeCard = document.createElement("article");
+  const recipeImage = document.createElement("img");
 }
 
 async function loadRecipeCards() {
@@ -25,5 +28,3 @@ async function loadRecipeCards() {
     createRecipeCard(recipe);
   }
 }
-
-loadRecipeCards();
