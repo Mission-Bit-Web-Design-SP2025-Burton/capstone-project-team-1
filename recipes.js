@@ -25,7 +25,9 @@ function createRecipeCard(recipe) {
     "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg";
   recipeImage.classList.add("recipe-card-image");
 
-  const recipeName = document.createElement();
+  const recipeName = document
+    .createElement("h3")
+    .classList.add("recipe-card-name");
 
   recipeCard.appendChild(recipeImage);
 }
