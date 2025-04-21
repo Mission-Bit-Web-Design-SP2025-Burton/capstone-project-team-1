@@ -11,6 +11,7 @@ async function getRecipes() {
 
     const json = await response.json();
     console.log(json);
+    return json;
   } catch (error) {
     console.error(error.message);
   }
@@ -21,23 +22,31 @@ function createRecipeCard(recipe) {
   recipeCard.classList.add("recipe-card");
 
   const recipeImage = document.createElement("img");
-  recipeImage.src = recipe.recipeImage.classList.add("recipe-card-image");
+  recipeImage.src = recipe.strMealThumb;
+  recipeImage.classList.add("recipe-card-image");
 
-  const recipeName = document
-    .createElement("h3")
-    .classList.add("recipe-card-name");
+  const recipeName = document.createElement("h3");
+
+  recipeName.classList.add("recipe-card-name");
+
+  recipeName.textContent = recipe.strMeal;
 
   recipeCard.appendChild(recipeImage);
   recipeCard.appendChild(recipeName);
+
+  console.log("recipeCard: ", recipeCard);
 
   const main = document.getElementsByTagName("main")[0];
   main.appendChild(recipeCard);
 }
 
 async function loadRecipeCards() {
-  const recipes = await getRecipes();
+  const { meals: recipes } = await getRecipes();
 
-  for (const recipe in recipes) {
+  console.log("recipes: ", recipes);
+
+  for (const recipe of recipes) {
+    console.log("recipe: ", recipe);
     createRecipeCard(recipe);
   }
 }
