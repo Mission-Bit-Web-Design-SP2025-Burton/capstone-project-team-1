@@ -14,4 +14,12 @@ async function getRecipes() {
   }
 }
 
-async function loadRecipeCards() {}
+async function loadRecipeCards() {
+  const recipes = await getRecipes();
+
+  for (const recipe in recipes) {
+    createRecipeCard(recipe);
+  }
+}
+
+loadRecipeCards();
