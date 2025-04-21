@@ -30,6 +30,10 @@ function createRecipeCard(recipe) {
     .classList.add("recipe-card-name");
 
   recipeCard.appendChild(recipeImage);
+  recipeCard.appendChild(recipeName);
+
+  const main = document.getElementsByTagName("main")[0];
+  main.appendChild(recipeCard);
 }
 
 async function loadRecipeCards() {
