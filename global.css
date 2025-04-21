@@ -30,6 +30,9 @@ nav > .topnav-links {
   display: none;
 }
 
+a {
+}
+
 .sidenav {
   position: absolute;
   height: 100vh;
